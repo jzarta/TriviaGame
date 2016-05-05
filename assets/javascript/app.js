@@ -1,24 +1,28 @@
+//Init Javascript var
 var trivGame = [
   {q1: 'Has Italy won a world cup?', Options: ['true', ' false'], Answer: true},
-  {q2: 'All bugs have 5 legs.', Options: ['true', 'false'] , Answer: false},
-  {q3: '4 + 5 = 8', Options: ['true', 'false'] , Answer: false},
-  {q4: 'Humans require water.', Options: ['true', 'false'] , Answer: true},
-  {q5: 'Milk comes from cows.', Options: ['true', 'false'] , Answer: true},
-//  {q6: '9 - 3 = 6', Options: ['true', 'false'] , Answer: true},
-// {q7: 'Rocks are soft objects.', Options: ['true', 'false'] , Answer: false},
-//  {q8: 'Italy is candy.', Options: ['true', 'false'] , Answer: false},
-//  {q9: '2 * 2 = 4', Options: ['true', 'false'] , Answer: true},
-//  {q10: 'Cars can talk.', Options: ['true', 'false'] , Answer: false}
+  {q2: 'Messi won the world cup?', Options: ['true', 'false'] , Answer: false},
+  {q3: 'Manchester United won this season?', Options: ['true', 'false'] , Answer: false},
+  {q4: 'Brazil have only won the World Cup twice?', Options: ['true', 'false'] , Answer: false},
+  {q5: 'Leo Messi has scored on a World Cup goal for Argentina?', Options: ['true', 'false'] , Answer: true},
+  {q6: 'Chelsea went the season of "04, 05" unbeaten?', Options: ['true', 'false'] , Answer: true},
+  {q7: 'PSG star player is Edison Cavani?', Options: ['true', 'false'] , Answer: false},
+  {q8: 'Neymar is number 10 in brazil?', Options: ['true', 'false'] , Answer: false},
+  {q9: 'Arsenal have won the UEFA champions league prior to 2005?', Options: ['true', 'false'] , Answer: true},
+  {q10: 'Julio Cesar is a Center Back?', Options: ['true', 'false'] , Answer: false}
 ];
-// Page loads when refreshed
+// Page start when refrehs
+
 $(document).ready(function() {
 
 var right = 0;
 var wrong = 0;
 var timer = 30;
 
+//jQury part
+
 $('.panel-body').hide();
-// $('.ans2').hide();
+
 $('.play-again').hide();
 
 $('.start').on('click', run);
@@ -26,7 +30,6 @@ $('.start').on('click', run);
   function run(){
       counter = setInterval(increment, 1000);
       $('.panel-body').show();
-      // $('.ans2').show();
       $('.start').hide("slow");
 
       $('.quest1').html(trivGame[0].q1);
@@ -171,6 +174,7 @@ $('.start').on('click', run);
             stop();
           });
     }
+//Functions increment
 
     function increment(){
       timer--;
@@ -184,23 +188,19 @@ $('.start').on('click', run);
       $('#third').hide();
       $('#fourth').hide();
       $('#fifth').hide();
- //     $('#six').hide();
- //     $('#seventh').hide();
- //     $('#eighth').hide();
- //     $('#ninth').hide();
- //     $('#tenth').hide();
-    // $('.ans2').hide();
-    // $('.play-again').show();
+      $('#six').hide();
+      $('#seventh').hide();
+      $('#eighth').hide();
+      $('#ninth').hide();
+      $('#tenth').hide();
+      $('.ans2').hide();
+      $('.play-again').show();
         }
     }
 
     function stop(){
       clearInterval(counter);
     }
-
-    // $('.play-again').on('click', function() {
-    //  run();
-    // });
 
 });
    

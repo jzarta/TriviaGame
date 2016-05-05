@@ -1,91 +1,107 @@
 .page-header {
-    color: #D11B30;
+    color: #FFD428;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .start {
-    color: #2EC4B6;
+    color: #247BA0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .legend {
-    color: #D11B30;
+    color: #FA7921;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .ans2 {
-    color: #2EC4B6;
+    color: #247BA0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
     background: url(../images/funny.png);
     background-size: 1280px , 750px;
     background-repeat: no-repeat;
-    font-family: 'Dosis', sans-serif;;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 35px;
 }
 
 .show-counter{
-    color: #D11B30;
+    color: #FA7921;
+    font-size: 17px;
 }
 
 .time-up {
-    color: #FF9F1C;
+    color: #FA7921;
+    font-size: 17px;
 }
 
 .right {
-    color: #D11B30;
-
+    color: #FA7921;
+    font-size: 17px;
 }
 
 .wrong {
-    color: #D11B30;
-
+    color: #FA7921;
+    font-size: 17px;
 }
 
 .quest1 {
-    color: #D11B30;
+    color: #FA7921;
+    font-size: 17px;
 
 }
 
 .quest2 {
-    color: #D11B30;
+    color: #FA7921;
+    font-size: 17px;
 
 }
 
 .quest3 {
-    color: #D11B30;
+    color: #FA7921;
+    font-size: 17px;
 
 }
 
 .quest4 {
-    color: #D11B30;
+    color: #FA7921;
+    font-size: 17px;
 
 }
 
 .quest5 {
-    color: #D11B30;
+    color: #FA7921;
+    font-size: 17px;
 
 }
 
 .quest6 {
-    color: #D11B30;
+    color: #FA7921;
+    font-size: 17px;
 
 }
 
 .quest7 {
-    color: #D11B30;
+    color: #FA7921;
+    font-size: 17px;
 
 }
 
 .quest8 {
-    color: #D11B30;
+    color: #FA7921;
+    font-size: 17px;
 
 }
 
 .quest9 {
-    color: #D11B30;
+    color: #FA7921;
+    font-size: 17px;
 
 }
 
 .quest10 {
-    color: #D11B30;
+    color: #FA7921;
+    font-size: 17px;
 
 }
