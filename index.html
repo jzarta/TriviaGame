@@ -1,116 +1,210 @@
-<DOCTYPE! html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    
+        <meta charset="UTF-8">
+        <title>Trivia Game</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Dosis:500,400' rel='stylesheet' type='text/style.css'>
 
-<meta charset="UTF-8">
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1 class="text-center">Soccer Trivia Game</h1>
+        </div>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <div class="row">
+            <div class="col-xs-2 col-md-2"></div>
+            <div class="col-xs-2 col-md-2"></div>
+            <div class="legend col-xs-2 col-md-2">
+                
+                <p>Rightful:<img src="assets/images/blue-balloon.png" width=45 height=45></p>
+            </div>
+            
+            <div class="legend col-xs-2 col-md-2">                
+                <p>Phony:<img src="assets/images/red-balloon.svg" width=45 height=45></p>
+            </div>
+            <div class="col-xs-2 col-md-2"></div>
+            <div class="col-xs-2 col-md-2"></div>
+        </div>
 
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <div class="row">
+            <div class="col-xs-4 col-md-4"></div>
+            <button class="col-xs-4 col-md-4 start">Lets do this!</button>
+            <div class="col-xs-4 col-md-4"></div>
+        </div>
 
+        <div class="text-center show-counter"></div>
 
-</head>    
-<div id="main-quiz-holder"> 
-    <div id="intro-container" class="questionContainer"> 
-        <a class="Start" href="#"><img src="img/start.png"/></a> 
-    </div> 
-    <div class="questionContainer hide"> 
-        <div class="question"> 
-            How many goals Messi scored in his life?
+        <div class="right text-center"></div>
+        <div class="wrong text-center"></div>
+        <div class="time-up text-center"></div>
+
+        <div class="row" id="first">
+            <div class="col-xs-2 col-md-2"></div>
+            <div class="col-xs-2 col-md-2 quest1 text-center"></div>
+
+                <div id="tru1" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/blue-balloon.png" width=45 height=45>
+                </div>
+
+                <div id="fal1" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/red-balloon.svg" width=45 height=45>
+                </div>
+
+            <div class="col-xs-2 col-md-2"></div>
+        </div>
+        <br>
+
+        <div class="row" id="second">
+            <div class="col-xs-2 col-md-2"></div>
+            <div class="col-xs-2 col-md-2 quest2 text-center"></div>
+
+                <div id="tru2" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/blue-balloon.png" width=45 height=45>
+                </div>
+
+                <div id="fal2" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/red-balloon.svg" width=45 height=45>
+                </div>
+
+            <div class="col-xs-2 col-md-2"></div>
         </div> 
-        <ul class="answers"> 
-            <li> 
-            <label><input data-key="a" type="radio">450</label> 
-            </li> 
-            <li> 
-            <label><input data-key="b" type="radio">650</label> 
-            </li> 
-            <li> 
-            <label><input data-key="c" type="radio">230</label> 
-            </li> 
-            <li> 
-            <label><input data-key="d" type="radio">501</label> 
-            </li> 
-        </ul> 
-        <div class="btnContainer"> 
-            <div class="next"> 
-                <a class="btnNext" href="#">Next</a> 
-            </div> 
-            <div class="clear"> 
-            </div> 
-        </div> 
-    </div> 
-    <div class="questionContainer hide"> 
-        <div class="question"> 
-            The C in CSS stands for? 
-        </div> 
-        <ul class="answers"> 
-            <li> 
-            <label><input data-key="a" type="radio">Crysis</label> 
-            </li> 
-            <li> 
-            <label><input data-key="b" type="radio">Crocodile</label> 
-            </li> 
-            <li> 
-            <label><input data-key="c" type="radio">Consistent</label> 
-            </li> 
-            <li> 
-            <label><input data-key="d" type="radio">Cascading</label> 
-            </li> 
-        </ul> 
-        <div class="btnContainer"> 
-            <div class="prev"> 
-                <a class="btnPrev" href="#">Prev</a> 
-            </div> 
-            <div class="next"> 
-                <a class="btnNext" href="#">Next</a> 
-            </div> 
-            <div class="clear"> 
-            </div> 
-        </div> 
-    </div> 
-    <!-- More questions here -->
-    <div class="questionContainer hide"> 
-        <div class="question"> 
-            The * selector selects... 
-        </div> 
-        <ul class="answers"> 
-            <li> 
-            <label><input data-key="a" type="radio">every div element</label> 
-            </li> 
-            <li> 
-            <label><input data-key="b" type="radio">only paragraphs</label> 
-            </li> 
-            <li> 
-            <label><input data-key="c" type="radio">only parent elements</label> 
-            </li> 
-            <li> 
-            <label><input data-key="d" type="radio">every element</label> 
-            </li> 
-        </ul> 
-        <div class="btnContainer"> 
-            <div class="prev"> 
-                <a class="btnPrev" href="#">Prev</a> 
-            </div> 
-            <div class="next"> 
-                <a class="btnShowResult" href="#">Finish</a> 
-            </div> 
-            <div class="clear"> 
-            </div> 
-        </div> 
-    </div> 
-    <div id="results-container" class="questionContainer hide"> 
-        <div id="resultKeeper"> 
-        </div> 
-    </div> 
-    <div id="progressKeeper"> 
-        <div id="progress"> 
-        </div> 
-    </div> 
-    <div id="notice"> 
-        Please select an option 
-    </div> 
+        <br>
+
+        <div class="row" id="third">
+            <div class="col-xs-2 col-md-2"></div>
+            <div class="col-xs-2 col-md-2 quest3 text-center"></div>
+
+                <div id="tru3" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/blue-balloon.png" width=45 height=45>
+                </div>
+
+                <div id="fal3" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/red-balloon.svg" width=45 height=45>
+                </div>
+
+            <div class="col-xs-2 col-md-2"></div>
+        </div>
+        <br>
+
+        <div class="row" id="fourth">
+            <div class="col-xs-2 col-md-2"></div>
+            <div class="col-xs-2 col-md-2 quest4 text-center"></div>
+
+                <div id="tru4" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/blue-balloon.png" width=45 height=45>
+                </div>
+
+                <div id="fal4" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/red-balloon.svg" width=45 height=45>
+                </div>
+
+            <div class="col-xs-2 col-md-2"></div>
+        </div>
+        <br>
+
+        <div class="row" id="fifth">
+            <div class="col-xs-2 col-md-2"></div>
+            <div class="col-xs-2 col-md-2 quest5 text-center"></div>
+
+                <div id="tru5" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/blue-balloon.png" width=45 height=45>
+                </div>
+
+                <div id="fal5" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/red-balloon.svg" width=45 height=45>
+                </div>
+
 </div>
-</html>
+</body>
+</html>                
+<!--just five questions
+            <div class="col-xs-2 col-md-2"></div>
+        </div>
+        <br>
+
+        <div class="row" id="six">
+            <div class="col-xs-2 col-md-2"></div>
+            <div class="col-xs-2 col-md-2 quest6 text-center"></div>
+
+                <div id="tru6" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/blue-balloon.png" width=45 height=45>
+                </div>
+
+                <div id="fal6" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/red-balloon.svg" width=45 height=45>
+                </div>
+
+            <div class="col-xs-2 col-md-2"></div>
+        </div>
+        <br>
+
+        <div class="row" id="seventh">
+            <div class="col-xs-2 col-md-2"></div>
+            <div class="col-xs-2 col-md-2 quest7 text-center"></div>
+
+                <div id="tru7" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/blue-balloon.png" width=45 height=45>
+                </div>
+
+                <div id="fal7" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/red-balloon.svg" width=45 height=45>
+                </div>
+
+            <div class="col-xs-2 col-md-2"></div>
+        </div>
+        <br>
+
+        <div class="row" id="eighth">
+            <div class="col-xs-2 col-md-2"></div>
+            <div class="col-xs-2 col-md-2 quest8 text-center"></div>
+
+                <div id="tru8" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/blue-balloon.png" width=45 height=45>
+                </div>
+
+                <div id="fal8" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/red-balloon.svg" width=45 height=45>
+                </div>
+
+            <div class="col-xs-2 col-md-2"></div>
+        </div>
+        <br>
+
+        <div class="row" id="ninth">
+            <div class="col-xs-2 col-md-2"></div>
+            <div class="col-xs-2 col-md-2 quest9 text-center"></div>
+
+                <div id="tru9" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/blue-balloon.png" width=45 height=45>
+                </div>
+
+                <div id="fal9" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/red-balloon.svg" width=45 height=45>
+                </div>
+
+            <div class="col-xs-2 col-md-2"></div>
+        </div>
+        <br>
+
+        <div class="row" id="tenth">
+            <div class="col-xs-2 col-md-2"></div>
+            <div class="col-xs-2 col-md-2 quest10 text-center"></div>
+
+                <div id="tru10" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/blue-balloon.png" width=45 height=45>
+                </div>
+
+                <div id="fal10" class="col-xs-2 col-md-2 text-center panel-body">
+                    <img src="assets/images/red-balloon.svg" width=45 height=45>
+                </div>
+
+            <div class="col-xs-2 col-md-2"></div>
+        </div>
+
+    </div>
