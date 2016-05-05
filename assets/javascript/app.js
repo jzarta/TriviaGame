@@ -1,5 +1,5 @@
 var trivGame = [
-  {q1: 'Kittens grow up to be cats.', Options: ['true', ' false'], Answer: true},
+  {q1: 'Has Italy won a world cup?', Options: ['true', ' false'], Answer: true},
   {q2: 'All bugs have 5 legs.', Options: ['true', 'false'] , Answer: false},
   {q3: '4 + 5 = 8', Options: ['true', 'false'] , Answer: false},
   {q4: 'Humans require water.', Options: ['true', 'false'] , Answer: true},

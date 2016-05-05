@@ -15,7 +15,8 @@
 }
 
 body {
-    background: url(../images/Ball.jpg);
+    background: url(../images/funny.png);
+    background-size: 1280px , 750px;
     background-repeat: no-repeat;
     font-family: 'Dosis', sans-serif;;
     font-size: 35px;
