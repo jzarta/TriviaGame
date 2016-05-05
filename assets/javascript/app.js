@@ -181,7 +181,7 @@ $('.start').on('click', run);
     $('.show-counter').html('<h3>' + 'Time left: ' + timer + ' seconds' + '</h3>');
     if (timer === 0){
     stop();
-      $('.time-up').html('<h2>' + 'Your Time is up!' + '</h2>');
+      $('.time-up').html('<h2>' + 'Your Time is gone!' + '</h2>');
       $('.panel-body').hide();
       $('#first').hide();
       $('#second').hide();
