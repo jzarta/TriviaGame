@@ -1,90 +1,90 @@
 .page-header {
-    color: #8D99AE;
+    color: #D11B30;
 }
 
 .start {
-    color: #E84A5C;
+    color: #2EC4B6;
 }
 
 .legend {
-    color: #8D99AE;
+    color: #D11B30;
 }
 
 .ans2 {
-    color: #E84A5C;
+    color: #2EC4B6;
 }
 
 body {
-    background: url(../images/bground1.png);
+    background: url(../images/Ball.jpg);
     background-repeat: no-repeat;
     font-family: 'Dosis', sans-serif;;
     font-size: 35px;
 }
 
 .show-counter{
-    color: #8D99AE;
+    color: #D11B30;
 }
 
 .time-up {
-    color: #8D99AE;
+    color: #FF9F1C;
 }
 
 .right {
-    color: #8D99AE;
+    color: #D11B30;
 
 }
 
 .wrong {
-    color: #8D99AE;
+    color: #D11B30;
 
 }
 
 .quest1 {
-    color: #8D99AE;
+    color: #D11B30;
 
 }
 
 .quest2 {
-    color: #8D99AE;
+    color: #D11B30;
 
 }
 
 .quest3 {
-    color: #8D99AE;
+    color: #D11B30;
 
 }
 
 .quest4 {
-    color: #8D99AE;
+    color: #D11B30;
 
 }
 
 .quest5 {
-    color: #8D99AE;
+    color: #D11B30;
 
 }
 
 .quest6 {
-    color: #8D99AE;
+    color: #D11B30;
 
 }
 
 .quest7 {
-    color: #8D99AE;
+    color: #D11B30;
 
 }
 
 .quest8 {
-    color: #8D99AE;
+    color: #D11B30;
 
 }
 
 .quest9 {
-    color: #8D99AE;
+    color: #D11B30;
 
 }
 
 .quest10 {
-    color: #8D99AE;
+    color: #D11B30;
 
 }
